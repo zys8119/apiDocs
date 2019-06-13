@@ -78,6 +78,7 @@ interface userInfo {
   pid?:string|number;
   type?:string;
   other?:Other;
+  groupSize?:number;
 }
 
 interface Other {
@@ -123,7 +124,9 @@ var userInfo = {
         time: "2019-06-02 14:06:04",
         userId: "1214",
         userName: "17858938486",
-    }
+    },
+    //【非必传】，群人数，发送群红包时需要，默认0个人
+    groupSize:0,
 }
 ```
 

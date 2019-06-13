@@ -37,6 +37,8 @@ interface TransferData {
     payProve: number;
     //自己的账号id
     userId: number;
+    //转账的备注，默认为null
+    remarks: string;
 }
 
 interface RedPackData{
@@ -137,3 +139,4 @@ var userInfo = {
     例如：【"/HongbaoOpen?Notice=true"】  
 ```
 >ios交互参考文档 https://github.com/marcuswestin/WebViewJavascriptBridge/blob/master/README.md
+

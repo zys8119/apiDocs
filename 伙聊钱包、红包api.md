@@ -14,9 +14,7 @@ interface Function {
   //关闭webViews
   closeWindow():void;
   //转账异步通知
-  TransferResult?():void;
-  //转账异步通知
-  TransferResult?(TransferData):void;
+  TransferResult?(TransferData:TransferData):void;
   /**
   * @发送红包异步通知
   * @param {object} RedPackData 发送红包的数据
@@ -28,6 +26,17 @@ interface Function {
   * 注意：该方法按需调用，请参考第三步
   */
   openRedPack?(h5RouterName):void;
+}
+
+interface TransferData {
+    //转账金额
+    amount:string|number;
+    //对方账号id
+    friendId: string;
+    //本次转账的支付凭证
+    payProve: number;
+    //自己的账号id
+    userId: number;
 }
 
 interface RedPackData{
@@ -84,6 +93,8 @@ var userInfo = {
     //以下用于钱包模块
     //【必传】，用户的loginId
     userId:196,
+    //【必传】，用户的token
+    token:"AE+9LXQgZOgeMryMA/E7JZorxz/ZyzUnq6wKUHKXsZejjiJmZJCstZLTzmXfKoO0YsGZFer/eJd1J/tXAyl8YQ==",
     
     
     //以下用户红包模块
@@ -126,4 +137,3 @@ var userInfo = {
     例如：【"/HongbaoOpen?Notice=true"】  
 ```
 >ios交互参考文档 https://github.com/marcuswestin/WebViewJavascriptBridge/blob/master/README.md
-

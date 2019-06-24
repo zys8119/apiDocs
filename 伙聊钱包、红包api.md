@@ -135,7 +135,8 @@ var userInfo = {
 >h5路由说明及备注
 
 ```text
- 1、钱包个人转账的时候app需要跳转到 【"/TransferAccount?userName"】,其中userName为用户的登录账号或手机号
+ 1、钱包个人转账的时候app需要跳转到 【"/TransferAccount?userName=123456789&from=user"】,
+    其中userName为用户的登录账号或手机号,
  2、红包发送时app需要跳转到 【"/HongbaoSend?group=true"】，其中group非必传，当发送群红包时，group参数设置成true
  3、拆红包的openRedPack异步通知是按需调动的.
     app如果想要使用该回调，那么在跳转拆红包页面时路由应该添加Notice参数，并设置为true 

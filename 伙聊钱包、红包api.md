@@ -12,7 +12,7 @@ interface Function {
   //获取用户信息
   getUserInfo():userInfo;
   //关闭webViews
-  closeWindow():void;
+  closeWindow(resData:closeWindow):void;
   //转账异步通知
   TransferResult?(TransferData:TransferData):void;
   /**
@@ -85,6 +85,18 @@ interface Other {
   avatar?:string;
   nickName?:string;
 }
+
+interface closeWindow {
+  //投诉数据：
+    //{type:'1',title:"发布了不适合内容对我造成了骚扰"},
+    //{type:'2',title:"存在欺诈骗钱行为"},
+    //{type:'3',title:"此账号可能被盗用了"},
+    //{type:'4',title:"存在侵权行为"},
+    //{type:'5',title:"发布仿冒品信息"},
+    //{type:'6',title:"冒充他人"},
+  title:string;
+  type:string|number;
+}
 ```
 
 #### 第二步
@@ -141,6 +153,7 @@ var userInfo = {
  3、拆红包的openRedPack异步通知是按需调动的.
     app如果想要使用该回调，那么在跳转拆红包页面时路由应该添加Notice参数，并设置为true 
     例如：【"/HongbaoOpen?Notice=true"】  
+ 4、投诉路由需要跳转到【"/Complaint"】
 ```
 >ios交互参考文档 https://github.com/marcuswestin/WebViewJavascriptBridge/blob/master/README.md
 

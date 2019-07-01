@@ -153,7 +153,7 @@ var userInfo = {
  3、拆红包的openRedPack异步通知是按需调动的.
     app如果想要使用该回调，那么在跳转拆红包页面时路由应该添加Notice参数，并设置为true 
     例如：【"/HongbaoOpen?Notice=true"】  
- 4、投诉路由需要跳转到【"/Complaint"】
+ 4、投诉路由需要跳转到【"/Complaint"】,如果群投诉可以传参数【group=true】，例如【"/Complaint?group=true"】
 ```
 >ios交互参考文档 https://github.com/marcuswestin/WebViewJavascriptBridge/blob/master/README.md
 

@@ -26,6 +26,10 @@ interface Function {
   * 注意：该方法按需调用，请参考第三步
   */
   openRedPack?(h5RouterName):void;
+  /**
+  * @联系客服
+  */
+  openCustomerService?():void;
 }
 
 interface TransferData {

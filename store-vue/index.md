@@ -270,6 +270,107 @@ store -| -----------------------------------vuex模块
     VuexStore.js -------------------------------原生vuex扩展
 ```
 
+### api->index.js
+
+> 示例
+
+```javascript
+export default {
+    /**
+    * apiDome
+    * @param args {any} 参数
+    * @param this {object}  vm对象
+    * @return Promise
+    * */
+    apiDome(...args){
+        this.action({
+            moduleName:"",
+            method:"get|pos|...",
+            url:"url",
+            params:{},
+            data:{}
+        }).then().catch()
+    },
+    apiDome2(...args){
+        return this.action({
+            moduleName:"",
+            method:"get|pos|...",
+            url:"url",
+            params:{},
+            data:{}
+        })
+    }
+}
+```
+
+
+### Mock->index.js
+
+```javascript
+export default [
+    //普通写法
+    MockObj => MockObj("/url",option=>{
+        return {
+            code:0,
+            msg:"成功",
+            data:[]
+        }
+    }),
+    //关闭写法
+    MockObj2 => MockObj(false,"/url",option=>{
+        return {
+            code:0,
+            msg:"成功",
+            data:[]
+        }
+    })
+    //...更多参考mockJs
+]
+```
+
+
+### filters->index.js
+
+```javascript
+export default {
+    /**
+    * filtersDome vue过滤器
+    * @param val 参数
+    * @return {any} 新的value值
+    */
+    filtersDome(val){
+        return val + "newVal";
+    }
+}
+```
+
+
+### utils->index.js
+
+```javascript
+export default {
+    /**
+    * utils 工具方法
+    * @param val 参数
+    * @return {any} 新的value值
+    */
+    utilsDome(val){
+        //你的code
+        return val + "newVal";
+    }
+}
+```
+
+
+### store->index.js
+
+```javascript
+export default {
+    //airforce模块
+    moudel
+}
+```
+
 ## 教程
 
 >例子

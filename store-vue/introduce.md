@@ -7,7 +7,7 @@
  
 ### demo (from [demo](https://link.jianshu.com/?t=https://github.com/vuejs/vuex/blob/dev/examples/counter/store.js))
 
-``` javascript 1.8
+```javascript 1.8
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -58,7 +58,7 @@ export default new Vuex.Store({
 
 ### airforce 设计
 
-以模块化注入
+以模块化抽离方式注入
 
 ```javascript 1.8
 import axios from './axios'

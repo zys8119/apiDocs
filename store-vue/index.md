@@ -1,6 +1,21 @@
 # store-vue 中文文档 [![npm](https://img.shields.io/badge/npm-Install-zys8119.svg?colorB=cb3837&style=flat-square)](https://www.npmjs.com/package/store-vue)  [![github](https://img.shields.io/badge/github-<Code>-zys8119.svg?colorB=000000&style=flat-square)](https://github.com/zys8119/store-vue)
 这个是一个vue状态管理器、vue过滤、vue工具、MockJs的集合
 
+## 大纲
+
+[vuex 设计](#vuex-设计)
+
+[目录架构](#目录架构)
+
+[安装](#安装)
+
+[使用及要求](#使用)
+
+[教程](#教程)
+
+[依赖](#依赖)
+
+
 ## vuex 设计
 
 先来看一下标准的 vuex demo
@@ -305,3 +320,10 @@ store -| -----------------------------------vuex模块
 
 </style>
 ```
+
+## 依赖
+
+[vuex](https://vuex.vuejs.org/)
+[lodash](https://www.lodashjs.com/)
+[axios](http://www.axios-js.com/)
+[mockJs](http://mockjs.com/)

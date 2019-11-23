@@ -8,7 +8,7 @@
  
 ### demo (from [demo](https://link.jianshu.com/?t=https://github.com/vuejs/vuex/blob/dev/examples/counter/store.js))
 
-```
+``` javascript 1.8
 import Vue from 'vue'
 import Vuex from 'vuex'
 

@@ -485,7 +485,7 @@ export default {
             // airforce数据引用
             this.airforce.moduleName.fieldName
             // utils工具
-            this.utils.DomeFun()
+            this.$utils.DomeFun()
             // api使用
             this.api().apiFun()
         }

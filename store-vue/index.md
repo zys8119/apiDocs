@@ -512,15 +512,15 @@ export default {
 
 > ajax/http 请求库汇总
 
-     请求方式     |	browser |  node  | promise | 单一职责 |	标准规范  
---------------------------------------------------------------------------
- XMLHttpRequest   |	  O     |  	X	 |    X   |  	O	  |    O      
- Node HTTP        |	  X     |  	O	 |    X   |  	O	  |    O      
- fetch            |	  O     |  	X	 |    O   |  	O	  |    O      
- node-fetch       |	  X     |  	O	 |    O   |  	O	  |    O      
- isomorphic-fetch |	  O     |  	O	 |    O   |  	O	  |    O      
- superagent       |	  O     |  	O	 |    X   |  	O	  |    X      
- axios            |	  O     |  	O	 |    O   |  	O	  |    X      
- request          |	  X     |  	O	 |    X   |  	O	  |    X      
- jQuery           |	  O     |  	X	 |    X   |  	X	  |    X      
- reqwest          |	  O     |  	O	 |    O   |  	O	  |    X      
+请求方式         |	browser |  node  | promise | 单一职责 |	标准规范  
+-----------------|----------|--------|---------|----------|---------
+XMLHttpRequest   |	  O     |  	X	 |    X    |  	O	  |    O      
+Node HTTP        |	  X     |  	O	 |    X    |  	O	  |    O      
+fetch            |	  O     |  	X	 |    O    |  	O	  |    O      
+node-fetch       |	  X     |  	O	 |    O    |  	O	  |    O      
+isomorphic-fetch |	  O     |  	O	 |    O    |  	O	  |    O      
+superagent       |	  O     |  	O	 |    X    |  	O	  |    X      
+axios            |	  O     |  	O	 |    O    |  	O	  |    X      
+request          |	  X     |  	O	 |    X    |  	O	  |    X      
+jQuery           |	  O     |  	X	 |    X    |  	X	  |    X      
+reqwest          |	  O     |  	O	 |    O    |  	O	  |    X      

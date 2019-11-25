@@ -520,7 +520,7 @@ fetch            |	  O     |  	X	 |    O    |  	O	  |    O
 node-fetch       |	  X     |  	O	 |    O    |  	O	  |    O      
 isomorphic-fetch |	  O     |  	O	 |    O    |  	O	  |    O      
 superagent       |	  O     |  	O	 |    X    |  	O	  |    X      
-<span style="color:#f00;">axios</span>            |	  O     |  	O	 |    O    |  	O	  |    X      
+axios            |	  O     |  	O	 |    O    |  	O	  |    X      
 request          |	  X     |  	O	 |    X    |  	O	  |    X      
 jQuery           |	  O     |  	X	 |    X    |  	X	  |    X      
 reqwest          |	  O     |  	O	 |    O    |  	O	  |    X      
